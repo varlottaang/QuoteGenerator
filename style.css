@@ -1,0 +1,38 @@
+body {
+    background: white  ;
+
+
+
+
+}
+
+body {
+    color: blue;
+}
+
+h1 {
+    color: red;
+    text-transform: uppercase;
+    font-family: "Impact", Arial;
+
+}
+
+label {
+    font-family: "Helvetica", Arial;
+    color: red;
+
+}
+
+p {
+    color: darkred;
+    font-family: "Helvetica", Arial;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+#quoteDisplay {
+    color: darkgreen;
+    font-family: "Times New Roman", Arial;
+    font-weight: bold;
+    font-size: 1.2rem;
+}

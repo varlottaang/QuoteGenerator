@@ -1,24 +1,69 @@
-<!Doctype HTML>
-<html>
-
-    <head>
-        <title>Quote generator</title>
-    </head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 <body>
-    <h1>Quote Generator</h1>
-    <div id="quoteDisplay"></div>
-    <button onclick="newQuote()">New Quote</button>
-    
-    <div id="savyDisplay"></div>
-    <button onclick="savyQuote()">Savy Quote</button>
-   
-    <div id="reload"></div>
-    <button onclick="myFunction()">Reload page</button>
 
-    
-    <script type="text/javascript" src="javascript/quote-generator.js"></script> 
-    <script type="text/javascript" src="javascript/savy-quote.js"></script>   
+<div class="pt-3" id="container" align="center">
+    <h1>Quote Generator</h1>
+</div>
+
+<div id="container" align="center">
+    <form id="form">
+        <p>
+            <select class="custom-select custom-select-lg mb-1" name="list" id="list">
+                <option value = 0>Select</option>
+                <option value = 1>Random Quotes</option>
+                <option value = 2>Famous Quotes</option>
+            </select>
+        </p>
+
+        <div id="radioBtn">
+            <input  type = "radio" id= "radioBtnOne" name ="radioButton" value = 1 checked/><label for ="radioBtnOne">1</label>
+            <input  type = "radio" id = "radioBtnTwo" name ="radioButton" value = 2 /><label for = "radioBtnTwo">2</label>
+            <input  type = "radio" id = "radioBtnThree" name ="radioButton" value = 3 /><label for = "radioBtnThree">3</label>
+            <input  type = "radio" id = "radioBtnFour" name = "radioButton" value = 4 /><label for = "radioBtnFour">4</label>
+            <input  type = "radio" id ="radioBtnFive" name = "radioButton" value = 5 /><label for = "radioBtnFive">5</label>
+        </div>
+
+        <p> <input class="btn btn-primary mb-2" id="button" type="submit" value="Get Quotes"/> </p>
+    </form>
+</div>
+<div id="content" align="center"></div>
+
+
+<!-- Version ONE  stepOne.js-->
+    <section id="stepOne" class="pt-5">
+        <div align="center">
+
+                <button class="btn btn-primary mb-2" onclick="newQuote()" align=center id=1>Feeling luky </button>
+                <button class="btn btn-primary mb-2" onclick="myFunction()"align=center>Delete</button>
+            <div id="quoteDisplay" class="pt-3" align=center></div>
+        </div>
+    </section>
+
+
+<!-- BOOTSTRAP -->
+<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/css/bootstrap.min.css'>
+<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+
+<link rel="stylesheet" href="style.css">
+
+<!-- JS, Popper.js, and jQuery -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"
+        integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"
+        integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
+<!-- Quote Generator -->
+<script src="quote-generator.js"></script>
+<script src="stepOne.js"></script>
+
 
 </body>
 </html>
